@@ -1,3 +1,20 @@
 h1 {
     text-align: center;
 }
+
+.divContainer {
+    background-color: aqua;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    div {
+        margin: 10px ;
+        background-color: bisque;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
