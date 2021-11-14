@@ -8,6 +8,30 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+    &.second {
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        // one line comment in 
+        flex-flow: row wrap;
+        align-content:space-between;
+        justify-content: flex-start;
+    }
+    &.order {
+        flex-flow:  row wrap;
+        .orderA {
+            order: 2;
+        }
+        .orderB {
+            order: 1;
+            flex-grow: 2;
+            flex-basis: 400px;
+        }
+        .orderC {
+            order: 3;
+            flex-grow: 1;
+        }
+    }
 
     div {
         margin: 10px ;
